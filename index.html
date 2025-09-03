@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMARU Café - Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo.png" />
+    <link rel="icon" type="image/png" href="assets/logo.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/logo.png" sizes="64x64" />
+  </head>
+  <body>
+    <!-- Header con Carrusel -->
+    <header id="home">
+      <div class="navbar">
+        <div class="logo-container">
+          <img
+            src="assets/amaru-logo-blanco.png"
+            alt="AMARU Café - Restaurant Logo"
+            class="logo animate-logo"
+          />
+          <i class="fas fa-leaf plant-icon logo-leaf"></i>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home" class="nav-link">Inicio</a></li>
+            <li><a href="#about" class="nav-link">Nosotros</a></li>
+            <li><a href="#menu" class="nav-link">Carta</a></li>
+            <li><a href="#events" class="nav-link">Eventos</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonios</a></li>
+            <li><a href="#contact" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="background-image: url('assets/amaru-3.jpg')"
+          >
+            <div class="carousel-caption">
+              <h1 class="typewriter">Bienvenidos a AMARU Café - Restaurant</h1>
+              <p class="typewriter">
+                Sabores peruanos en el corazón de Cerro de Pasco
+              </p>
+              <a href="#contact" class="btn btn-primary animate-button"
+                >Reservar Mesa</a
+              >
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('assets/amaru-1ero.png')"
+          >
+            <div class="carousel-caption">
+              <h1 class="typewriter">Gastronomía Andina</h1>
+              <p class="typewriter">
+                Platos y cafés que cuentan nuestra historia
+              </p>
+              <a href="#menu" class="btn btn-primary animate-button"
+                >Explorar Carta</a
+              >
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('assets/amaru4.jpg')"
+          >
+            <div class="carousel-caption">
+              <h1 class="typewriter">Eventos Memorables</h1>
+              <p class="typewriter">Celebra con el alma peruana</p>
+              <a href="#events" class="btn btn-primary animate-button"
+                >Más Información</a
+              >
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-control next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </header>
+    <!-- Sección Nosotros -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="title animate-title">
+          <h2 class="typewriter">AMARU Café - Restaurant</h2>
+          <p>Sabores que conectan con la naturaleza andina</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Nuestra Historia</h3>
+            <p>
+              Desde 2020, AMARU Café - Restaurant ha sido un refugio
+              gastronómico en Cerro de Pasco. Inspirados por la cultura andina,
+              ofrecemos platos y cafés que celebran la riqueza del Perú con un
+              toque moderno.
+            </p>
+            <h3>Sobre Nosotros</h3>
+            <p>
+              Somos un equipo dedicado a brindar experiencias únicas a través de
+              la comida peruana y cafés de origen. Cada plato es un viaje a los
+              Andes, preparado con pasión y autenticidad.
+            </p>
+            <h3>Ubicación</h3>
+            <p>
+              Estamos en 01, Cerro de Pasco, Perú, en un espacio acogedor
+              rodeado de la magia de los Andes.
+            </p>
+            <a href="#contact" class="btn btn-secondary animate-button"
+              >Contáctanos</a
+            >
+          </div>
+          <img
+            src="assets/amaru-1ero.png"
+            alt="Ambiente peruano"
+            class="animate-image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Sección Carta -->
+    <section id="menu" class="section">
+      <div class="container">
+        <div class="title animate-title">
+          <h2 class="typewriter">Nuestra Carta</h2>
+          <p>Descubre los sabores del Perú</p>
+        </div>
+        <div class="menu-categories">
+          <div class="menu-category">
+            <h3 class="animate-title">Desayunos</h3>
+            <div class="menu-items">
+              <div class="menu-item animate-menu-item">
+                <img src="assets/tamal.jpg" alt="Tamal Andino" />
+                <div>
+                  <h4>Tamal Andino <span>S/ 12</span></h4>
+                  <p>
+                    Tamal de maíz relleno de pollo y ají, envuelto en hoja de
+                    plátano.
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item animate-menu-item">
+                <img
+                  src="assets/panchicharon.jpeg"
+                  alt="Sándwich de Chicharrón"
+                />
+                <div>
+                  <h4>Sándwich de Chicharrón <span>S/ 18</span></h4>
+                  <p>
+                    Chicharrón crujiente con camote frito y salsa criolla en pan
+                    artesanal.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-category">
+            <h3 class="animate-title">Almuerzos</h3>
+            <div class="menu-items">
+              <div class="menu-item animate-menu-item">
+                <img src="assets/cevichetrucha.jpg" alt="Ceviche de Trucha" />
+                <div>
+                  <h4>Ceviche de Trucha <span>S/ 32</span></h4>
+                  <p>
+                    Trucha fresca marinada en limón, acompañada de maíz y
+                    camote.
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item animate-menu-item">
+                <img src="assets/lomo-saltado.jpg" alt="Lomo Saltado" />
+                <div>
+                  <h4>Lomo Saltado <span>S/ 35</span></h4>
+                  <p>
+                    Lomo de res salteado con cebolla, tomate y papas fritas,
+                    servido con arroz.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-category">
+            <h3 class="animate-title">Postres</h3>
+            <div class="menu-items">
+              <div class="menu-item animate-menu-item">
+                <img src="assets/masamorra.jpg" alt="Mazamorra Morada" />
+                <div>
+                  <h4>Mazamorra Morada <span>S/ 10</span></h4>
+                  <p>
+                    Postre tradicional de maíz morado con frutas secas y canela.
+                  </p>
+                </div>
+              </div>
+              <div class="menu-item animate-menu-item">
+                <img src="assets/picarones.jpg" alt="Picarones" />
+                <div>
+                  <h4>Picarones <span>S/ 12</span></h4>
+                  <p>
+                    Rosquillas de zapallo y camote bañadas en miel de chancaca.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-category">
+            <h3 class="animate-title">Bebidas</h3>
+            <div class="menu-items">
+              <div class="menu-item animate-menu-item">
+                <img src="assets/cafe.jpg" alt="Café Andino" />
+                <div>
+                  <h4>Café Andino <span>S/ 8</span></h4>
+                  <p>Café de origen peruano, aromático y de sabor intenso.</p>
+                </div>
+              </div>
+              <div class="menu-item animate-menu-item">
+                <img src="assets/maracuya.jpg" alt="Jugo de Maracuyá" />
+                <div>
+                  <h4>Jugo de Maracuyá <span>S/ 7</span></h4>
+                  <p>Jugo natural de maracuyá, refrescante y lleno de sabor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-third animate-button">Ver Carta Completa</a>
+      </div>
+    </section>
+    <!-- Sección Eventos -->
+    <section id="events" class="section">
+      <div class="container">
+        <div class="title animate-title">
+          <h2 class="typewriter">Eventos Especiales</h2>
+          <p>Celebra con el encanto peruano</p>
+        </div>
+        <div class="events-content">
+          <p>
+            En AMARU Café - Restaurant, tus eventos se convierten en momentos
+            mágicos. Organizamos matrimonios, cumpleaños, bautizos y reuniones
+            corporativas con menús personalizados que resaltan la gastronomía
+            peruana. Nuestro espacio, decorado con plantas andinas, ofrece un
+            ambiente cálido y moderno.
+          </p>
+          <a href="#contact" class="btn btn-secondary animate-button"
+            >Solicitar Cotización</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Sección Testimonios -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="title animate-title">
+          <h2 class="typewriter">Testimonios de Nuestros Clientes</h2>
+          <p>Lo que dicen quienes han vivido la experiencia</p>
+        </div>
+        <div class="testimonials-content">
+          <div class="testimonial animate-testimonial">
+            <p>
+              "El ceviche de trucha es increíble y el café andino es puro amor.
+              ¡Un lugar único!"
+            </p>
+            <h4>Juan P.</h4>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testimonial animate-testimonial">
+            <p>
+              "Celebramos nuestro aniversario aquí y fue perfecto. La atención
+              es de primera."
+            </p>
+            <h4>María G.</h4>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="testimonial animate-testimonial">
+            <p>
+              "Los picarones y el jugo de maracuyá son una delicia. ¡Volveré
+              pronto!"
+            </p>
+            <h4>Sofía L.</h4>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="comment-form">
+          <h3 class="animate-title">Deja tu Comentario</h3>
+          <form id="comment-form">
+            <input
+              type="text"
+              name="name"
+              id="comment-name"
+              placeholder="Tu Nombre"
+              required
+            />
+            <textarea
+              name="comment"
+              id="comment-text"
+              cols="30"
+              rows="4"
+              placeholder="Tu Comentario"
+              required
+            ></textarea>
+            <div class="star-rating">
+              <input type="radio" name="rating" id="star5" value="5" /><label
+                for="star5"
+                ><i class="fas fa-star"></i
+              ></label>
+              <input type="radio" name="rating" id="star4" value="4" /><label
+                for="star4"
+                ><i class="fas fa-star"></i
+              ></label>
+              <input type="radio" name="rating" id="star3" value="3" /><label
+                for="star3"
+                ><i class="fas fa-star"></i
+              ></label>
+              <input type="radio" name="rating" id="star2" value="2" /><label
+                for="star2"
+                ><i class="fas fa-star"></i
+              ></label>
+              <input type="radio" name="rating" id="star1" value="1" /><label
+                for="star1"
+                ><i class="fas fa-star"></i
+              ></label>
+            </div>
+            <button type="submit" class="btn btn-third animate-button">
+              Enviar Comentario
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Sección Contacto -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="title animate-title">
+          <h2 class="typewriter">Contáctanos</h2>
+          <p>Estamos aquí para hacer tu experiencia inolvidable</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div>
+              <h3>Dirección</h3>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> 01, Cerro de Pasco,
+                Perú
+              </p>
+              <p><i class="fa-solid fa-phone"></i> Teléfono: +51 960 090 728</p>
+              <p>
+                <i class="fa-solid fa-whatsapp"></i> WhatsApp: +51 960 090 728
+              </p>
+            </div>
+            <div>
+              <h3>Horarios</h3>
+              <p>Lunes a Viernes: 7:00 a.m. - 9:00 p.m.</p>
+              <p>Sábados y Domingos: 7:30 a.m. - 7:00 p.m.</p>
+            </div>
+            <div>
+              <h3>Síguenos</h3>
+              <a
+                href="https://www.facebook.com/p/AMARU-Caf%C3%A9-Restaurant-61574809784673/"
+                target="_blank"
+                ><i
+                  class="fab fa-facebook-f animate-icon"
+                  style="--social-color: #1877f2"
+                ></i
+              ></a>
+              <a
+                href="https://www.instagram.com/amarucafepe/?hl=es"
+                target="_blank"
+                ><i
+                  class="fab fa-instagram animate-icon"
+                  style="--social-color: #e4405f"
+                ></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@amarucafe?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                ><i
+                  class="fab fa-tiktok animate-icon"
+                  style="--social-color: #000000"
+                ></i
+              ></a>
+              <a href="https://wa.me/51960090728" target="_blank"
+                ><i
+                  class="fab fa-whatsapp animate-icon"
+                  style="--social-color: #25d366"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <form id="contact-form" class="animate-form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nombre Completo"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Correo Electrónico"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Asunto"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Mensaje"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-third animate-button">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+      <p>
+        Copyright &copy; 2025 AMARU Café - Restaurant. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+    <script>
+      // Carrusel
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".carousel-item");
+      const totalSlides = slides.length;
+      const prevButton = document.querySelector(".carousel-control.prev");
+      const nextButton = document.querySelector(".carousel-control.next");
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+          slide.style.transform =
+            i === index
+              ? "translateX(0) scale(1)"
+              : "translateX(20px) scale(0.95)";
+        });
+      }
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+      }
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+      }
+      nextButton.addEventListener("click", nextSlide);
+      prevButton.addEventListener("click", prevSlide);
+      setInterval(nextSlide, 5000);
+      // Animaciones al hacer scroll
+      const animateElements = document.querySelectorAll(
+        ".animate-title, .animate-text, .animate-button, .animate-image, .animate-menu-item, .animate-testimonial, .animate-form, .animate-icon, .plant-icon"
+      );
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              if (entry.target.classList.contains("animate-menu-item")) {
+                entry.target.style.animationDelay = `${Math.random() * 0.4}s`;
+              }
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+      animateElements.forEach((el) => observer.observe(el));
+      // Animación de escritura
+      const typewriters = document.querySelectorAll(".typewriter");
+      typewriters.forEach((element) => {
+        const text = element.innerHTML;
+        element.innerHTML = "";
+        let i = 0;
+        function type() {
+          if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, 50);
+          }
+        }
+        observer.observe(element);
+        element.addEventListener("animationstart", () => {
+          if (element.classList.contains("visible")) type();
+        });
+      });
+      // Formulario de contacto
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const formData = new FormData(this);
+          fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              alert("¡Mensaje enviado con éxito!");
+              this.reset();
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              alert("Hubo un error al enviar el mensaje. Inténtalo de nuevo.");
+            });
+        });
+      // Formulario de comentarios
+      const commentForm = document.getElementById("comment-form");
+      const testimonialsContent = document.querySelector(
+        ".testimonials-content"
+      );
+      commentForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const name = document.getElementById("comment-name").value;
+        const comment = document.getElementById("comment-text").value;
+        const rating =
+          document.querySelector('input[name="rating"]:checked')?.value || 5;
+        const testimonial = document.createElement("div");
+        testimonial.className = "testimonial animate-testimonial";
+        testimonial.innerHTML = `
+                <p>"${comment}"</p>
+                <h4>${name}</h4>
+                <div class="stars">${'<i class="fas fa-star"></i>'.repeat(
+                  rating
+                )}${'<i class="far fa-star"></i>'.repeat(5 - rating)}</div>
+            `;
+        testimonialsContent.prepend(testimonial);
+        observer.observe(testimonial);
+        this.reset();
+      });
+      // Menú hamburguesa
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector("nav");
+      menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        menuToggle.innerHTML = nav.classList.contains("active")
+          ? '<i class="fas fa-times"></i>'
+          : '<i class="fas fa-bars"></i>';
+      });
+    </script>
+  </body>
+</html>
