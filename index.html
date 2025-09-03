@@ -236,7 +236,22 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn btn-third animate-button">Ver Carta Completa</a>
+        <button class="btn btn-third animate-button" id="open-menu-modal">
+          Ver Carta Completa
+        </button>
+        <div class="modal" id="menu-modal">
+          <div class="modal-content animate-modal">
+            <span class="modal-close" id="close-menu-modal"
+              ><i class="fas fa-times"></i
+            ></span>
+            <h3>Carta Completa</h3>
+            <img
+              src="assets/menu-completo.jpg"
+              alt="Carta Completa AMARU"
+              class="modal-image"
+            />
+          </div>
+        </div>
       </div>
     </section>
     <!-- Sección Eventos -->
@@ -254,7 +269,10 @@
             peruana. Nuestro espacio, decorado con plantas andinas, ofrece un
             ambiente cálido y moderno.
           </p>
-          <a href="#contact" class="btn btn-secondary animate-button"
+          <a
+            href="https://wa.me/51960090728?text=Hola,%20quiero%20solicitar%20una%20cotización%20para%20un%20evento%20en%20AMARU%20Café%20-%20Restaurant"
+            target="_blank"
+            class="btn btn-secondary animate-button"
             >Solicitar Cotización</a
           >
         </div>
@@ -484,14 +502,17 @@
       setInterval(nextSlide, 5000);
       // Animaciones al hacer scroll
       const animateElements = document.querySelectorAll(
-        ".animate-title, .animate-text, .animate-button, .animate-image, .animate-menu-item, .animate-testimonial, .animate-form, .animate-icon, .plant-icon"
+        ".animate-title, .animate-text, .animate-button, .animate-image, .animate-menu-item, .animate-testimonial, .animate-form, .animate-icon, .plant-icon, .animate-modal"
       );
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               entry.target.classList.add("visible");
-              if (entry.target.classList.contains("animate-menu-item")) {
+              if (
+                entry.target.classList.contains("animate-menu-item") ||
+                entry.target.classList.contains("animate-modal")
+              ) {
                 entry.target.style.animationDelay = `${Math.random() * 0.4}s`;
               }
             }
@@ -518,6 +539,36 @@
           if (element.classList.contains("visible")) type();
         });
       });
+      // Modal para carta completa
+      const menuModal = document.getElementById("menu-modal");
+      const openMenuModal = document.getElementById("open-menu-modal");
+      const closeMenuModal = document.getElementById("close-menu-modal");
+      function adjustModalSize() {
+        const modalContent = document.querySelector(".modal-content");
+        if (modalContent) {
+          modalContent.style.maxHeight = `${window.innerHeight * 0.9}px`;
+          modalContent.style.maxWidth = `${Math.min(
+            window.innerWidth * 0.9,
+            1000
+          )}px`;
+        }
+      }
+      openMenuModal.addEventListener("click", () => {
+        menuModal.style.display = "flex";
+        adjustModalSize();
+        setTimeout(() => menuModal.classList.add("visible"), 10);
+      });
+      closeMenuModal.addEventListener("click", () => {
+        menuModal.classList.remove("visible");
+        setTimeout(() => (menuModal.style.display = "none"), 300);
+      });
+      menuModal.addEventListener("click", (e) => {
+        if (e.target === menuModal) {
+          menuModal.classList.remove("visible");
+          setTimeout(() => (menuModal.style.display = "none"), 300);
+        }
+      });
+      window.addEventListener("resize", adjustModalSize);
       // Formulario de contacto
       document
         .getElementById("contact-form")
